@@ -2,7 +2,6 @@ package uk.co.exware.service;
 
 import org.junit.Before;
 import org.junit.Test;
-import uk.co.exware.BigDecimalUtil;
 import uk.co.exware.calculator.AverageExecutionPriceCalculator;
 import uk.co.exware.calculator.ExecutedQuantityCalculator;
 import uk.co.exware.calculator.OpenInterestCalculator;
@@ -10,14 +9,12 @@ import uk.co.exware.model.*;
 import uk.co.exware.repository.ExecutedOrderRepository;
 import uk.co.exware.repository.OpenOrderRepository;
 
-import java.math.BigDecimal;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
 
 import static java.util.Arrays.asList;
 import static org.mockito.Mockito.*;
-import static uk.co.exware.BigDecimalUtil.newBigDecimal;
 import static uk.co.exware.model.Direction.BUY;
 import static uk.co.exware.model.Direction.SELL;
 

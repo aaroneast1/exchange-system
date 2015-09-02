@@ -2,17 +2,13 @@ package uk.co.exware.calculator;
 
 import org.junit.Before;
 import org.junit.Test;
-import uk.co.exware.BigDecimalUtil;
 import uk.co.exware.model.ExecutedOrder;
 import uk.co.exware.model.Instrument;
 import uk.co.exware.model.Money;
 import uk.co.exware.model.User;
 
-import java.math.BigDecimal;
-
 import static java.util.Arrays.asList;
-import static org.junit.Assert.*;
-import static uk.co.exware.BigDecimalUtil.newBigDecimal;
+import static org.junit.Assert.assertEquals;
 
 public class AverageExecutionPriceCalculatorTest {
 

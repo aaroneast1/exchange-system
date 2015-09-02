@@ -1,12 +1,8 @@
 package uk.co.exware.model;
 
 import org.apache.commons.lang3.builder.HashCodeBuilder;
-import uk.co.exware.BigDecimalUtil;
 
-import java.math.BigDecimal;
 import java.time.Instant;
-
-import static uk.co.exware.BigDecimalUtil.addScale;
 
 public class Order {
 

@@ -51,21 +51,21 @@ public class ExchangeSystem {
     }
 
     private ExecutedOrder create(Order newOrder, Order existingOrder){
-        User sellUser = newOrder.getUser();
-        User buyUser = existingOrder.getUser();
-
-        if(newOrder.isBuy()){
-            buyUser = newOrder.getUser();
-            sellUser = existingOrder.getUser();
-        }
-
         Money bestUnitPrice = getBestPrice(newOrder, existingOrder);
 
-        return new ExecutedOrder(newOrder.getInstrument(),
-                newOrder.getQuantity(),
-                bestUnitPrice,
-                buyUser,
-                sellUser);
+        if(newOrder.isBuy()){
+            return new ExecutedOrder(newOrder.getInstrument(),
+                    newOrder.getQuantity(),
+                    bestUnitPrice,
+                    newOrder.getUser(),
+                    existingOrder.getUser());
+        }else{
+            return new ExecutedOrder(newOrder.getInstrument(),
+                    newOrder.getQuantity(),
+                    bestUnitPrice,
+                    existingOrder.getUser(),
+                    newOrder.getUser());
+        }
     }
 
     private Money getBestPrice(Order newOrder, Order existingOrder){

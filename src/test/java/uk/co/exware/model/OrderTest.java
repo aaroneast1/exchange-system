@@ -1,13 +1,9 @@
 package uk.co.exware.model;
 
 import org.junit.Test;
-import uk.co.exware.BigDecimalUtil;
-
-import java.math.BigDecimal;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
-import static uk.co.exware.BigDecimalUtil.newBigDecimal;
 import static uk.co.exware.model.Direction.BUY;
 
 
