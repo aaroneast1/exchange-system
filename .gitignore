@@ -1,3 +1,5 @@
 exchange-system.iml
 .idea/**
+**/.idea/**
+**/target/**
 target/**
