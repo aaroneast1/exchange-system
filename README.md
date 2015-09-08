@@ -1,7 +1,8 @@
 # A very simple exchange system
-#### Written in Java 8, Scala 11.x and io.js
+#### Three versions of the exchange written using Java 8, Scala 11.x and io.js
 
 ### Summary
 
-I thought I would write a simple exchange system written in 3 different languages in order to compare the languages.
+I want to compare implementations between my 3 favourite programming languages.
 
+<more to come once I have finished>
