@@ -1,6 +1,6 @@
 package uk.co.exware
 
-import uk.co.exware.ExchangeSystem.{User, Instrument, Order, Direction}
+import uk.co.exware.model._
 import org.scalatest._
 
 class ExchangeSystemSpec extends FlatSpec with Matchers {

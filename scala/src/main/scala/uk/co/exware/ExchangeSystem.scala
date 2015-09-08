@@ -1,8 +1,8 @@
 package uk.co.exware
 
-import uk.co.exware.ExchangeSystem.Direction.Direction
+package model {
 
-object ExchangeSystem {
+  import uk.co.exware.model.Direction.Direction
 
   object Direction extends Enumeration {
     type Direction = Value
@@ -30,6 +30,13 @@ object ExchangeSystem {
     require(unitPrice >= 0, "Must supply a unitPrice greater than zero")
     require(user != null, "Must supply a valid user")
   }
+}
+
+import uk.co.exware.model.Order
+
+object ExchangeSystem {
+
+  
 
   def addOrder(order:Order) :Unit = {
 
